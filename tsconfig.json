@@ -5,6 +5,7 @@
   },
   "files": [
     "./src/app.ts",
+    "./src/components/whois/directives/whois.ts",
     "./src/home/controllers/home.ts",
     "./src/home/controllers/door.ts",
     "typings/tsd.d.ts"

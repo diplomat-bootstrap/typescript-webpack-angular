@@ -8,13 +8,16 @@ module.exports = {
     },
     devtool: 'source-map',
     resolve: {
-        extensions: ["", ".webpack.js", ".web.js", ".ts", ".js"]
+        extensions: ["", ".webpack.js", ".web.js", ".ts", ".js", ".html"]
     },
     module: {
         loaders: [
             {
                 test: /\.ts$/,
                 loader: "ts"
+            }, {
+                test: /\.html$/,
+                loader: 'ngtemplate?relativeTo=' + __dirname + '/!raw'
             }
         ]
     },

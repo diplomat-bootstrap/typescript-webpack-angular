@@ -4,14 +4,10 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-route/angular-route.js"></script>
     <script src="./dist/bundle.js"></script>
 </head>
 <body ng-app="application">
-    <div ng-controller="HomeController">
-        {{ someVar }}
-    </div>
-    <div ng-controller="DoorController">
-        {{ someVar }}
-    </div>
+    <ng-view></ng-view>
 </body>
 </html>
