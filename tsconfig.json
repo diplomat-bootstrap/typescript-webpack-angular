@@ -4,7 +4,9 @@
     "sourceMap": true
   },
   "files": [
-    "app.ts",
+    "./src/app.ts",
+    "./src/home/controllers/home.ts",
+    "./src/home/controllers/door.ts",
     "typings/tsd.d.ts"
   ]
 }

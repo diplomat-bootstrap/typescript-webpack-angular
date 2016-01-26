@@ -3,9 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <script src="node_modules/angular/angular.js"></script>
     <script src="./dist/bundle.js"></script>
 </head>
-<body>
-
+<body ng-app="application">
+    <div ng-controller="HomeController">
+        {{ someVar }}
+    </div>
+    <div ng-controller="DoorController">
+        {{ someVar }}
+    </div>
 </body>
 </html>
