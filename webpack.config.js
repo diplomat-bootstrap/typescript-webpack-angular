@@ -22,7 +22,7 @@ module.exports = {
         ]
     },
     plugins: [
-        new webpack.SourceMapDevToolPlugin("./dist/bundle.js.map", null, "[absolute-resource-path]", "[absolute-resource-path]")
+        //new webpack.SourceMapDevToolPlugin("./dist/bundle.js.map", null, "[absolute-resource-path]", "[absolute-resource-path]")
         //new webpack.optimize.UglifyJsPlugin()
     ],
     devServer: {

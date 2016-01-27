@@ -35,9 +35,16 @@ _TBD_
 #### Angular and TypeScript
 - [AngularJS with TypeScript](https://gist.github.com/esfand/9569523)
 - [When Two Forces Meet (AngularJS, TypeScript)](http://sirarsalih.com/2014/01/28/when-two-forces-meet-angularjs-typescript/)
+- [Writing AngularJS directives as TypeScript classes](http://blog.aaronholmes.net/writing-angularjs-directives-as-typescript-classes/)
 
 #### Testing Angular
 - [Mocking Dependencies in AngularJS Tests](http://www.sitepoint.com/mocking-dependencies-angularjs-tests/)
 
 #### Webpack
 - [Video: OSCON 2014: How Instagram.com Works; Pete Hunt](https://www.youtube.com/watch?v=VkTCL6Nqm6Y)
+
+### TODO
+- [ ] Sourcemaps
+- [ ] Style embeding
+- [ ] minifying dependencies with Gulp
+- [ ] loader

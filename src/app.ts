@@ -1,7 +1,6 @@
 /// <reference path="../typings/tsd.d.ts" />
 /// <reference path="./home/controllers/home.ts" />
 
-import IRouteProvider = angular.route.IRouteProvider;
 import {HomeController} from "./home/controllers/home";
 import {Whois} from "./components/whois/directives/whois";
 
@@ -12,9 +11,9 @@ let app = angular.module("application", ["ngRoute"]);
 app.controller("HomeController", ($scope) => new HomeController($scope));
 
 // importing all application's components for future usage
-app.directive("whois", Whois)
+app.directive("whois", Whois);
 
-app.config(($routeProvider: IRouteProvider) => {
+app.config(($routeProvider: angular.route.IRouteProvider) => {
 
     let homeTemplate = require("./home/views/home.html");
     $routeProvider.when("/home", {
