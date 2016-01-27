@@ -1,13 +1,15 @@
 /// <reference path="../../../../typings/tsd.d.ts" />
 
-//var template = ;
+interface DirectiveScope extends ng.IScope {
+    url: string;
+}
 
-export class Whois {
-    constructor() {
-        let template = require("../views/whois.html");
-        return {
-            restrict: "E",
-            template: template
-        }
+export function Whois(): ng.IDirective {
+    return {
+        restrict: "E",
+        link: (scope: DirectiveScope) => {
+            scope.url = "google.com"
+        },
+        templateUrl: require("../views/whois.html")
     }
 }

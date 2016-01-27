@@ -8,7 +8,7 @@ module.exports = {
     },
     devtool: 'source-map',
     resolve: {
-        extensions: ["", ".webpack.js", ".web.js", ".ts", ".js", ".html"]
+        extensions: ["", ".webpack.js", ".web.js", ".ts", ".js"]
     },
     module: {
         loaders: [
@@ -24,5 +24,9 @@ module.exports = {
     plugins: [
         new webpack.SourceMapDevToolPlugin("./dist/bundle.js.map", null, "[absolute-resource-path]", "[absolute-resource-path]")
         //new webpack.optimize.UglifyJsPlugin()
-    ]
+    ],
+    devServer: {
+        port: 3000,
+        hot: true
+    }
 };

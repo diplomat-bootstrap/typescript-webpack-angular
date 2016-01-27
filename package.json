@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "webpack-dev-server --progress --colors",
-    "build": "webpack --devtool eval --progress --colors"
+    "build": "webpack --devtool eval --progress --colors",
+    "tsd": "tsd install"
   },
   "dependencies": {
     "angular": "1.4.9",

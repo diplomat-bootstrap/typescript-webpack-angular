@@ -12,7 +12,7 @@ let app = angular.module("application", ["ngRoute"]);
 app.controller("HomeController", ($scope) => new HomeController($scope));
 
 // importing all application's components for future usage
-app.directive("whois", () => new Whois())
+app.directive("whois", Whois)
 
 app.config(($routeProvider: IRouteProvider) => {
 
